@@ -53,7 +53,17 @@ jobs:
     needs: [Test, Load-Test]
     steps:
       - run: |
-          for i in 1 2 3 4 5; do
-            echo "Step $i deploying..."
-            sleep 10
-          done
+          echo "Step 1 deploying..."
+          sleep 10
+      - run: |
+          echo "Step 2 deploying..."
+          sleep 10
+      - run: |
+          echo "Step 3 deploying..."
+          sleep 10
+      - run: |
+          echo "Step 4 deploying..."
+          sleep 10
+      - run: |
+          echo "Step 5 deploying..."
+          sleep 10
