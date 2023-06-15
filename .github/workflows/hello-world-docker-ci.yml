@@ -1,0 +1,21 @@
+name: Github Actions Docker CI
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - hello-world-docker-actions/**
+  workflow_dispatch:
+
+jobs:
+  container-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - id: hello-action
+        uses: ./hello-world-docker-action
+        with:
+          who-to-greet: '@sschne'
+      - name: Time set in container
+        run: echo "The time was ${{ steps.hello-action.outputs.time }}"

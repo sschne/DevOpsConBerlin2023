@@ -1,0 +1,12 @@
+name: Hello world Docker
+description: This runs a container
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  who-to-greet:
+    description: Who to greet
+    default: World
+outputs:
+  time:
+    description: The current time
