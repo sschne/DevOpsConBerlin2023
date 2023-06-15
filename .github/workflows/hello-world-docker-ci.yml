@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - hello-world-docker-actions/**
+      - hello-world-docker-action/**
   workflow_dispatch:
 
 jobs:
