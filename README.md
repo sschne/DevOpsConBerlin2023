@@ -70,4 +70,6 @@ Find common terminology for reference [here](./CheatSheet.md)
 
 ## Test
 
-this should start a push trigger
+this should start a push trigger.
+
+Committing this with skip ci.
