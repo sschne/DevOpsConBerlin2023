@@ -1,5 +1,5 @@
 FROM alpine:3.10
 
-COPY entrypoint.sh .
+COPY hello-world-docker-action/entrypoint.sh .
 
 RUN ["entrypoint.sh"]
